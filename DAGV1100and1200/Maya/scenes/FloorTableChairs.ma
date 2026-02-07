@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: FloorTableChairs.ma
-//Last modified: Sat, Feb 07, 2026 02:23:08 PM
+//Last modified: Sat, Feb 07, 2026 02:30:04 PM
 //Codeset: 1252
 file -rdi 1 -ns "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -rdi 1 -ns "shelf" -rfn "shelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/shelf.ma";
@@ -9,7 +9,8 @@ file -rdi 1 -ns "book_3" -rfn "book_3RN" -op "v=0;" -typ "mayaAscii" "C:/Users/c
 file -rdi 1 -ns "book_2" -rfn "book_2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/book 2.ma";
 file -rdi 1 -ns "book_1" -rfn "book_1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/book 1.ma";
 file -rdi 1 -ns "chair" -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
-file -rdi 1 -ns "vase" -rfn "vaseRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/assets/vase.ma";
+file -rdi 1 -ns "Vase" -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma";
 file -r -ns "table" -dr 1 -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -r -ns "shelf" -dr 1 -rfn "shelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/shelf.ma";
 file -r -ns "lamp" -dr 1 -rfn "lampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/lamp.ma";
@@ -17,28 +18,27 @@ file -r -ns "book_3" -dr 1 -rfn "book_3RN" -op "v=0;" -typ "mayaAscii" "C:/Users
 file -r -ns "book_2" -dr 1 -rfn "book_2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/book 2.ma";
 file -r -ns "book_1" -dr 1 -rfn "book_1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/book 1.ma";
 file -r -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
-file -r -ns "vase" -dr 1 -rfn "vaseRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/assets/vase.ma";
+file -r -ns "Vase" -dr 1 -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires "mtoa" "5.5.4.2";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "5D686734-4D16-A26C-C9D4-C39C9325465F";
+fileInfo "UUID" "66E8E01E-405B-7A05-C298-C7864355AC92";
 createNode transform -s -n "persp";
 	rename -uid "796F2A5A-44C0-B29F-B54E-8A85EBEAAC0B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.66652621147313706 7.9617062150827476 26.585257971753414 ;
-	setAttr ".r" -type "double3" -374.13835266729933 -356.59999999988884 -9.9567589887163751e-17 ;
+	setAttr ".t" -type "double3" 4.2522593722926274 4.1907930433366225 19.305120188327415 ;
+	setAttr ".r" -type "double3" -362.13835266724908 -360.19999999973351 1.6073701907521345e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3B375EFB-4783-CD5F-AB83-859E758FCEA3";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 35.425207154387586;
+	setAttr ".coi" 23.050815820830508;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -205,20 +205,20 @@ createNode mesh -n "Wall_backShape" -p "Wall_back";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "98E4A8BF-4057-D6F4-7FD3-B78A08FE0192";
+	rename -uid "453E2CAE-4AA6-C9A5-5941-87B645BEAF88";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2C816CD9-48AE-9BAB-E0A0-2A9DFF4163C6";
+	rename -uid "B03C24F0-40B9-6B0E-CB0F-82B2416104B3";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "577F70C8-4C74-C215-E4B1-7FA3F6335DC8";
+	rename -uid "5D992957-4D77-637A-C43F-D3BFAB1511AD";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A831F275-4993-47B4-A6BC-CE9F90BECCE9";
+	rename -uid "CA236C48-4988-2258-D298-3BAC66457756";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "10EE0328-4640-139F-B445-AD95C8DA1B65";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C75218AF-4DB1-F6F4-077D-859010D4D66F";
+	rename -uid "B7417FD9-4EC5-32A2-7067-CA834960B249";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "9E86F4DC-4B31-A27B-EC9C-9BA7AA457449";
 	setAttr ".g" yes;
@@ -350,16 +350,24 @@ createNode reference -n "chairRN";
 		2 "|chair:Chair" "scalePivot" " -type \"double3\" -1.83373284339904785 0.8050084114074707 0.095723241567611694";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "vaseRN";
-	rename -uid "BE8B1896-442C-E1F2-C6E3-189DF46CD765";
-	setAttr ".fn[0]" -type "string" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/assets/vase.ma";
+createNode reference -n "Unit4_CurvesLabRN";
+	rename -uid "A5323012-4ACA-4F91-1F4B-8299C7F521B4";
+	setAttr ".fn[0]" -type "string" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
-		"vaseRN"
-		"vaseRN" 0;
+		"Unit4_CurvesLabRN"
+		"Unit4_CurvesLabRN" 0
+		"Unit4_CurvesLabRN" 4
+		2 "|Vase:revolvedSurface2" "translate" " -type \"double3\" 3.77072572221546753 1.79295175136123941 -3.24049500207858809"
+		
+		2 "|Vase:revolvedSurface2" "scale" " -type \"double3\" 0.29676565086806639 0.29676565086806639 0.29676565086806639"
+		
+		2 "|Vase:revolvedSurface2" "rotatePivot" " -type \"double3\" 0.0081788897514343262 2.18252924084663391 -0.050807833671569824"
+		
+		2 "|Vase:revolvedSurface2" "scalePivot" " -type \"double3\" 0.0081788897514343262 2.18252924084663391 -0.050807833671569824";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
-	rename -uid "CF6B90B8-41F2-BB72-90BC-838EF7E3B75C";
+	rename -uid "4582D045-41AD-762C-2D37-799F8964964E";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
 select -ne :time1;
@@ -380,6 +388,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -387,7 +396,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 10 ".dsm";
+	setAttr -s 11 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -417,7 +426,7 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr "sharedReferenceNode.sr" "vaseRN.sr";
+connectAttr "sharedReferenceNode.sr" "Unit4_CurvesLabRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Wall_backShape.iog" ":initialShadingGroup.dsm" -na;

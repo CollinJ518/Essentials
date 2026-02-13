@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: FloorTableChairs.ma
-//Last modified: Sat, Feb 07, 2026 02:30:04 PM
+//Last modified: Fri, Feb 13, 2026 01:33:15 PM
 //Codeset: 1252
 file -rdi 1 -ns "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -rdi 1 -ns "shelf" -rfn "shelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/shelf.ma";
@@ -11,6 +11,7 @@ file -rdi 1 -ns "book_1" -rfn "book_1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/c
 file -rdi 1 -ns "chair" -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
 file -rdi 1 -ns "Vase" -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma";
+file -rdi 1 -ns "Couch" -rfn "CouchRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/assets/Couch.ma";
 file -r -ns "table" -dr 1 -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -r -ns "shelf" -dr 1 -rfn "shelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/shelf.ma";
 file -r -ns "lamp" -dr 1 -rfn "lampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/lamp.ma";
@@ -19,30 +20,32 @@ file -r -ns "book_2" -dr 1 -rfn "book_2RN" -op "v=0;" -typ "mayaAscii" "C:/Users
 file -r -ns "book_1" -dr 1 -rfn "book_1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/book 1.ma";
 file -r -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
 file -r -ns "Vase" -dr 1 -rfn "Unit4_CurvesLabRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/scenes/Unit4_CurvesLab.ma";
+file -r -ns "Couch" -dr 1 -rfn "CouchRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya/assets/Couch.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires "mtoa" "5.5.4.2";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "66E8E01E-405B-7A05-C298-C7864355AC92";
+fileInfo "UUID" "6E10B4A0-4DD7-5F2F-3317-8D8045974170";
 createNode transform -s -n "persp";
 	rename -uid "796F2A5A-44C0-B29F-B54E-8A85EBEAAC0B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.2522593722926274 4.1907930433366225 19.305120188327415 ;
-	setAttr ".r" -type "double3" -362.13835266724908 -360.19999999973351 1.6073701907521345e-16 ;
+	setAttr ".t" -type "double3" -8.6733923531568635 6.2406602952999464 16.60582728566029 ;
+	setAttr ".r" -type "double3" -372.3383526670238 -382.99999999957259 4.3190357301274339e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3B375EFB-4783-CD5F-AB83-859E758FCEA3";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.050815820830508;
+	setAttr ".coi" 22.820179517954315;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 7.6380114164068917 5.0633860196611327 -0.24865023014053911 ;
+	setAttr ".tp" -type "double3" 0.0042330579547860125 3.3715921985820589 -0.0029210268382997562 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "1A3F299B-4D31-1F8A-9485-B5A9381C875D";
@@ -205,20 +208,20 @@ createNode mesh -n "Wall_backShape" -p "Wall_back";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "453E2CAE-4AA6-C9A5-5941-87B645BEAF88";
+	rename -uid "5D5418E3-42E6-E6B9-7948-BE8A6A466D14";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B03C24F0-40B9-6B0E-CB0F-82B2416104B3";
+	rename -uid "2DA35B12-4ECE-9B57-1D7C-28864145FD19";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5D992957-4D77-637A-C43F-D3BFAB1511AD";
+	rename -uid "732DC1A1-42DC-CA51-DA40-65B65E69C540";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "CA236C48-4988-2258-D298-3BAC66457756";
+	rename -uid "903F96FC-4F4D-ECD4-ABD2-B4841E74EFAB";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "10EE0328-4640-139F-B445-AD95C8DA1B65";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B7417FD9-4EC5-32A2-7067-CA834960B249";
+	rename -uid "88DBD725-48CF-3EA2-6E68-1F801E6164A8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "9E86F4DC-4B31-A27B-EC9C-9BA7AA457449";
 	setAttr ".g" yes;
@@ -289,7 +292,9 @@ createNode reference -n "shelfRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shelfRN"
 		"shelfRN" 0
-		"shelfRN" 2
+		"shelfRN" 3
+		2 "|shelf:shelfs" "translate" " -type \"double3\" 0.48580071682773873 0 0"
+		
 		2 "|shelf:shelfs" "rotatePivot" " -type \"double3\" 2.9126739501953125 1.83506953716278076 -3.25123500823974609"
 		
 		2 "|shelf:shelfs" "scalePivot" " -type \"double3\" 2.9126739501953125 1.83506953716278076 -3.25123500823974609";
@@ -297,13 +302,49 @@ createNode reference -n "shelfRN";
 lockNode -l 1 ;
 createNode reference -n "lampRN";
 	rename -uid "4F3165EC-4FAA-56FE-B4B9-F7867B822429";
+	setAttr -s 10 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"lampRN"
 		"lampRN" 0
-		"lampRN" 2
+		"lampRN" 20
+		2 "|lamp:Lamp_1" "translate" " -type \"double3\" 0.99236605150876867 -0.53184299999206441 0.27073164401532956"
+		
+		2 "|lamp:Lamp_1" "translateX" " -av"
+		2 "|lamp:Lamp_1" "translateY" " -av"
+		2 "|lamp:Lamp_1" "translateZ" " -av"
+		2 "|lamp:Lamp_1" "scale" " -type \"double3\" 0.7915566801143733 0.7915566801143733 0.7915566801143733"
+		
+		2 "|lamp:Lamp_1" "scaleX" " -av"
+		2 "|lamp:Lamp_1" "scaleY" " -av"
+		2 "|lamp:Lamp_1" "scaleZ" " -av"
 		2 "|lamp:Lamp_1" "rotatePivot" " -type \"double3\" 0.16893577575683594 3.38400185108184814 -3.32936310768127441"
 		
-		2 "|lamp:Lamp_1" "scalePivot" " -type \"double3\" 0.16893577575683594 3.38400185108184814 -3.32936310768127441";
+		2 "|lamp:Lamp_1" "scalePivot" " -type \"double3\" 0.16893577575683594 3.38400185108184814 -3.32936310768127441"
+		
+		5 4 "lampRN" "|lamp:Lamp_1.visibility" "lampRN.placeHolderList[1]" ""
+		
+		5 4 "lampRN" "|lamp:Lamp_1.translateX" "lampRN.placeHolderList[2]" ""
+		
+		5 4 "lampRN" "|lamp:Lamp_1.translateY" "lampRN.placeHolderList[3]" ""
+		
+		5 4 "lampRN" "|lamp:Lamp_1.translateZ" "lampRN.placeHolderList[4]" ""
+		
+		5 4 "lampRN" "|lamp:Lamp_1.rotateX" "lampRN.placeHolderList[5]" ""
+		5 4 "lampRN" "|lamp:Lamp_1.rotateY" "lampRN.placeHolderList[6]" ""
+		5 4 "lampRN" "|lamp:Lamp_1.rotateZ" "lampRN.placeHolderList[7]" ""
+		5 4 "lampRN" "|lamp:Lamp_1.scaleX" "lampRN.placeHolderList[8]" ""
+		5 4 "lampRN" "|lamp:Lamp_1.scaleY" "lampRN.placeHolderList[9]" ""
+		5 4 "lampRN" "|lamp:Lamp_1.scaleZ" "lampRN.placeHolderList[10]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "book_3RN";
@@ -370,6 +411,154 @@ createNode reference -n "sharedReferenceNode";
 	rename -uid "4582D045-41AD-762C-2D37-799F8964964E";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
+createNode reference -n "CouchRN";
+	rename -uid "8797E11C-4F92-CBDA-7233-00B686309524";
+	setAttr -s 10 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"CouchRN"
+		"CouchRN" 0
+		"CouchRN" 18
+		2 "|Couch:Couch" "translate" " -type \"double3\" -2.50535937135647968 -0.60047269712197293 -4.13202514984812375"
+		
+		2 "|Couch:Couch" "translateX" " -av"
+		2 "|Couch:Couch" "translateY" " -av"
+		2 "|Couch:Couch" "translateZ" " -av"
+		2 "|Couch:Couch" "scale" " -type \"double3\" 0.87260654810155625 0.87260654810155625 0.87260654810155625"
+		
+		2 "|Couch:Couch" "scaleX" " -av"
+		2 "|Couch:Couch" "scaleY" " -av"
+		2 "|Couch:Couch" "scaleZ" " -av"
+		5 4 "CouchRN" "|Couch:Couch.visibility" "CouchRN.placeHolderList[1]" 
+		""
+		5 4 "CouchRN" "|Couch:Couch.translateX" "CouchRN.placeHolderList[2]" 
+		""
+		5 4 "CouchRN" "|Couch:Couch.translateY" "CouchRN.placeHolderList[3]" 
+		""
+		5 4 "CouchRN" "|Couch:Couch.translateZ" "CouchRN.placeHolderList[4]" 
+		""
+		5 4 "CouchRN" "|Couch:Couch.rotateX" "CouchRN.placeHolderList[5]" ""
+		
+		5 4 "CouchRN" "|Couch:Couch.rotateY" "CouchRN.placeHolderList[6]" ""
+		
+		5 4 "CouchRN" "|Couch:Couch.rotateZ" "CouchRN.placeHolderList[7]" ""
+		
+		5 4 "CouchRN" "|Couch:Couch.scaleX" "CouchRN.placeHolderList[8]" ""
+		5 4 "CouchRN" "|Couch:Couch.scaleY" "CouchRN.placeHolderList[9]" ""
+		5 4 "CouchRN" "|Couch:Couch.scaleZ" "CouchRN.placeHolderList[10]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode animCurveTU -n "Couch_visibility";
+	rename -uid "BB56C0B4-4F03-24E1-EDCD-7CAF0663332A";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "Couch_translateX";
+	rename -uid "45C57101-4346-6EB0-30CC-2A92E81BC7AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "Couch_translateY";
+	rename -uid "E0B7F4BB-4D99-412D-5B47-FBB6C465785F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "Couch_translateZ";
+	rename -uid "E151DF3E-419C-CA42-57AE-87AEDA8509E9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Couch_rotateX";
+	rename -uid "B5E86547-4E8C-85F4-9292-D89B0379D0B5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Couch_rotateY";
+	rename -uid "545F3C8D-453F-1AEA-0656-C09BF1519C9A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Couch_rotateZ";
+	rename -uid "75037C64-4FBD-26C1-45DC-F4A55E030E84";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "Couch_scaleX";
+	rename -uid "471BC39A-4F35-5B90-D478-72A953CB0D14";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "Couch_scaleY";
+	rename -uid "92FCF8B1-4D5F-59E5-1539-C7915FC8F521";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "Couch_scaleZ";
+	rename -uid "65FC1A1F-4B6B-67F8-8F15-4D8A47EE1AC5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "Lamp_1_visibility";
+	rename -uid "ED778874-4B7D-97E2-3B81-ED8EA518A95D";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "Lamp_1_translateX";
+	rename -uid "2BA37062-4957-3AEA-B83A-C88CE9BFE51B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "Lamp_1_translateY";
+	rename -uid "EC7BA5AD-47A6-BBDC-CB6C-8C80FAD3CA35";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "Lamp_1_translateZ";
+	rename -uid "4A7EA4BF-4F4D-25AB-541A-4C84AB5D64C5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Lamp_1_rotateX";
+	rename -uid "AFF1FD7A-4BE6-2C46-E0D4-FB84D0FD8086";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Lamp_1_rotateY";
+	rename -uid "B8DC19C8-4C33-7E3D-0CCA-D384E169FA52";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "Lamp_1_rotateZ";
+	rename -uid "E6FCCC84-49CA-D750-6E6B-47BF5BEBF0E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "Lamp_1_scaleX";
+	rename -uid "70CE6BA5-425F-C09B-E7EC-A5AD12D21EF9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "Lamp_1_scaleY";
+	rename -uid "AEA7F921-4A6F-B56B-692C-16A8733151D2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "Lamp_1_scaleZ";
+	rename -uid "7933E1FC-4265-B786-819A-7C9957EEBE3D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -396,7 +585,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 11 ".dsm";
+	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -418,8 +607,26 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
+connectAttr "Lamp_1_visibility.o" "lampRN.phl[1]";
+connectAttr "Lamp_1_translateX.o" "lampRN.phl[2]";
+connectAttr "Lamp_1_translateY.o" "lampRN.phl[3]";
+connectAttr "Lamp_1_translateZ.o" "lampRN.phl[4]";
+connectAttr "Lamp_1_rotateX.o" "lampRN.phl[5]";
+connectAttr "Lamp_1_rotateY.o" "lampRN.phl[6]";
+connectAttr "Lamp_1_rotateZ.o" "lampRN.phl[7]";
+connectAttr "Lamp_1_scaleX.o" "lampRN.phl[8]";
+connectAttr "Lamp_1_scaleY.o" "lampRN.phl[9]";
+connectAttr "Lamp_1_scaleZ.o" "lampRN.phl[10]";
+connectAttr "Couch_visibility.o" "CouchRN.phl[1]";
+connectAttr "Couch_translateX.o" "CouchRN.phl[2]";
+connectAttr "Couch_translateY.o" "CouchRN.phl[3]";
+connectAttr "Couch_translateZ.o" "CouchRN.phl[4]";
+connectAttr "Couch_rotateX.o" "CouchRN.phl[5]";
+connectAttr "Couch_rotateY.o" "CouchRN.phl[6]";
+connectAttr "Couch_rotateZ.o" "CouchRN.phl[7]";
+connectAttr "Couch_scaleX.o" "CouchRN.phl[8]";
+connectAttr "Couch_scaleY.o" "CouchRN.phl[9]";
+connectAttr "Couch_scaleZ.o" "CouchRN.phl[10]";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";

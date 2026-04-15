@@ -9789,6 +9789,7 @@ GameObject:
   - component: {fileID: 941131588}
   - component: {fileID: 941131591}
   - component: {fileID: 941131592}
+  - component: {fileID: 941131593}
   m_Layer: 3
   m_Name: 'Playable charactor '
   m_TagString: Untagged
@@ -9803,7 +9804,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941131587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e8cbbe35153640cea23bf58a428eab0, type: 3}
   m_Name: 
@@ -9921,6 +9922,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   nameIdObj: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
+--- !u!114 &941131593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941131587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ad69971be4468488f44e63eacd2d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  jumpForce: 2.5
+  gravity: -60
 --- !u!1001 &951055116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17581,7 +17597,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1760966084}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
           m_MethodName: UpdateWithFloatData
           m_Mode: 1
@@ -25334,7 +25350,7 @@ MonoBehaviour:
           m_StringArgument: SawAnims
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1760966084}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
@@ -28190,6 +28206,7 @@ GameObject:
   - component: {fileID: 1760966083}
   - component: {fileID: 1760966082}
   - component: {fileID: 1760966084}
+  - component: {fileID: 1760966085}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -28261,9 +28278,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760966080}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddf1b3746124a41cd90cb0e79f73be2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataObj: {fileID: 11400000, guid: 3f053ec5bc035da4190b786070f1c03e, type: 2}
+--- !u!114 &1760966085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760966080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ff3e7155e56f2469e0fe0af4933a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dataObj: {fileID: 11400000, guid: 3f053ec5bc035da4190b786070f1c03e, type: 2}

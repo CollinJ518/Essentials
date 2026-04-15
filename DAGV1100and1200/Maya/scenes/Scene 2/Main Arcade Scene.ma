@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Main Arcade Scene.ma
-//Last modified: Fri, Apr 10, 2026 07:06:04 PM
+//Last modified: Wed, Apr 15, 2026 12:12:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "Bar_Stool" -rfn "Bar_StoolRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/Bar Stool.ma";
 file -rdi 1 -ns "Bar_Stool1" -rfn "Bar_StoolRN1" -op "v=0;" -typ "mayaAscii"
@@ -23,17 +23,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "45ACA604-426D-A599-56BD-D69BC7C8D192";
+fileInfo "UUID" "D176E223-4C48-154C-5AC5-13A5B3155BAA";
 createNode transform -s -n "persp";
 	rename -uid "9500C114-4B01-0266-A6E7-BEB9E859385F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.0293997926630341 6.3666880038577345 24.223437151497283 ;
-	setAttr ".r" -type "double3" -10.538352770518864 728.59999999990328 0 ;
+	setAttr ".t" -type "double3" -4.8227643056386356 10.772309491011214 22.90530218786634 ;
+	setAttr ".r" -type "double3" -18.938352770519046 718.59999999955323 4.9711006141197736e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "98DBEB5A-4C79-00CA-C196-1983C242C279";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 25.22936965828065;
+	setAttr ".coi" 25.229369658278419;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -106,9 +106,9 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 7 ".pt[0:6]" -type "float3"  -0.24056399 0 0.0041110036 
-		0.24056399 0 0 -0.24056399 0 0.0041110036 -0.24056399 0 0.0041110036 0.24056399 0 
-		0 -0.24056399 0 0.0041110036 0.24056399 0 0;
+	setAttr -s 7 ".pt[0:6]" -type "float3"  -0.27299672 0 0.0041110036 
+		0.27299672 0 0 -0.27299672 0 0.0041110036 -0.27299672 0 0.0041110036 0.27299672 0 
+		0 -0.27299672 0 0.0041110036 0.27299672 0 0;
 createNode transform -n "pCube2" -p "group1";
 	rename -uid "06932D4D-44AC-76D9-45E9-51A05DF14803";
 	setAttr ".v" no;
@@ -168,7 +168,7 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube3" -p "group1";
 	rename -uid "20955049-452A-D956-61EE-7BB839625B7F";
-	setAttr ".t" -type "double3" -5.3705594535182026 0.59205868823799279 -1.4225591491921938 ;
+	setAttr ".t" -type "double3" -5.5730259225122296 0.59205868823799279 -1.4225591491921938 ;
 createNode mesh -n "pCubeShape3" -p "pCube3";
 	rename -uid "6254BC3F-49F5-A98E-AC5D-A99D06724B8A";
 	setAttr -k off ".v";
@@ -195,10 +195,10 @@ createNode mesh -n "pCubeShape3" -p "pCube3";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.48561066 -8.9928065e-15 
-		3.1259809 0.48561066 -8.9928065e-15 3.1259809 -0.48561066 -8.9928065e-15 3.1259809 
-		0.48561066 -8.9928065e-15 3.1259809 -0.48561066 -8.9928065e-15 -3.1259809 0.48561066 
-		-8.9928065e-15 -3.1259809 -0.48561066 -8.9928065e-15 -3.1259809 0.48561066 -8.9928065e-15 
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.59994769 -8.9928065e-15 
+		3.1259809 0.59994769 -8.9928065e-15 3.1259809 -0.59994769 -8.9928065e-15 3.1259809 
+		0.59994769 -8.9928065e-15 3.1259809 -0.59994769 -8.9928065e-15 -3.1259809 0.59994769 
+		-8.9928065e-15 -3.1259809 -0.59994769 -8.9928065e-15 -3.1259809 0.59994769 -8.9928065e-15 
 		-3.1259809;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
@@ -250,10 +250,10 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.48561066 -8.9928065e-15 
-		3.1259809 0.48561066 -8.9928065e-15 3.1259809 -0.48561066 -8.9928065e-15 3.1259809 
-		0.48561066 -8.9928065e-15 3.1259809 -0.48561066 -8.9928065e-15 -3.1259809 0.48561066 
-		-8.9928065e-15 -3.1259809 -0.48561066 -8.9928065e-15 -3.1259809 0.48561066 -8.9928065e-15 
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.59994769 -8.9928065e-15 
+		3.1259809 0.59994769 -8.9928065e-15 3.1259809 -0.59994769 -8.9928065e-15 3.1259809 
+		0.59994769 -8.9928065e-15 3.1259809 -0.59994769 -8.9928065e-15 -3.1259809 0.59994769 
+		-8.9928065e-15 -3.1259809 -0.59994769 -8.9928065e-15 -3.1259809 0.59994769 -8.9928065e-15 
 		-3.1259809;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
@@ -278,7 +278,8 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube5" -p "group1";
 	rename -uid "CEBDD658-4B5E-8EC7-CC23-A989357A1602";
-	setAttr ".t" -type "double3" -7.4210318318260784 0.59205868823799279 -1.4081524501998868 ;
+	setAttr ".rp" -type "double3" -7.8113370395228889 0.59205868823799279 -1.4081524501998868 ;
+	setAttr ".sp" -type "double3" -7.8113370395228889 0.59205868823799279 -1.4081524501998868 ;
 createNode mesh -n "pCubeShape5" -p "pCube5";
 	rename -uid "F032BE8D-4DE6-AA63-F7AB-A9A0AE96492C";
 	setAttr -k off ".v";
@@ -305,10 +306,10 @@ createNode mesh -n "pCubeShape5" -p "pCube5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[0:7]" -type "float3"  -0.50301784 -9.2148511e-15 
-		3.108196 0.50301784 -9.2148511e-15 3.108196 -0.50301784 -9.2148511e-15 3.108196 0.50301784 
-		-9.2148511e-15 3.108196 -0.50301784 -9.2148511e-15 -3.108196 0.50301784 -9.2148511e-15 
-		-3.108196 -0.50301784 -9.2148511e-15 -3.108196 0.50301784 -9.2148511e-15 -3.108196;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  -8.4307117 0.59205866 1.7000436 
+		-7.1919627 0.59205866 1.7000436 -8.4307117 0.59205866 1.7000436 -7.1919627 0.59205866 
+		1.7000436 -8.4307117 0.59205866 -4.5163484 -7.1919627 0.59205866 -4.5163484 -8.4307117 
+		0.59205866 -4.5163484 -7.1919627 0.59205866 -4.5163484;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -769,7 +770,7 @@ createNode mesh -n "pCubeShape16" -p "pCube16";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube17" -p "group1";
 	rename -uid "E013B739-4BA8-4BDA-9B14-FBB978332BF4";
-	setAttr ".t" -type "double3" -9.0230153013652554 4.1280600333907271 -4.4190605463258796 ;
+	setAttr ".t" -type "double3" -9.4406609975354243 4.1280600333907271 -4.4190605463258796 ;
 createNode mesh -n "pCubeShape17" -p "pCube17";
 	rename -uid "78116E14-4FE4-3616-F650-AEB242B8E55A";
 	setAttr -k off ".v";
@@ -1200,7 +1201,7 @@ createNode mesh -n "pCubeShape26" -p "pCube26";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube27" -p "group1";
 	rename -uid "5A5A9685-4261-B238-68FE-EEBB69FD65CA";
-	setAttr ".t" -type "double3" -9.3933676353166451 4.1280600333907271 2.9590682653042126 ;
+	setAttr ".t" -type "double3" -9.793660122976835 4.1280600333907271 2.9590682653042126 ;
 createNode mesh -n "pCubeShape27" -p "pCube27";
 	rename -uid "60073BED-476C-668C-E0C1-3D83123627F8";
 	setAttr -k off ".v";
@@ -1253,20 +1254,20 @@ createNode mesh -n "pCubeShape27" -p "pCube27";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A208E34D-411B-844A-3BEE-3F99C1917D84";
+	rename -uid "1E6695BF-4C7E-4A33-A970-A3AC5D7F0B11";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5E34BB9A-4095-921A-21BF-7788B4E3044F";
+	rename -uid "AD092ED7-4E5E-E275-9D61-71972E69F626";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "20831A83-48C8-B55C-BCDC-4EAE1569E2D9";
+	rename -uid "3B82252E-4BAE-B689-A01D-AEAB6678255D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B8C00CA7-45A0-9AD1-0961-AF934FD9EAC5";
+	rename -uid "48DCF6D4-49EA-4DA5-94F8-DB9E48E2B0FA";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3897D56C-435E-8C47-F937-06995E6CA199";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "6EFACBD7-491B-BB40-6AE6-E5AC1B4EC146";
+	rename -uid "D05CE2ED-4FA4-4EF5-7CB0-78880A148577";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4AC873A7-4BD1-7554-EC71-0A87AB08384D";
 	setAttr ".g" yes;
@@ -1376,7 +1377,7 @@ createNode reference -n "Bar_StoolRN";
 		"Bar_StoolRN"
 		"Bar_StoolRN" 0
 		"Bar_StoolRN" 153
-		2 "|Bar_Stool:Bar_Stool|Bar_Stool:pCube7" "translate" " -type \"double3\" 0 0.063462339597324169 0"
+		2 "|Bar_Stool:Bar_Stool|Bar_Stool:pCube7" "translate" " -type \"double3\" 0.067436330930394695 0.063462339597324169 0.020178262842581951"
 		
 		2 "|Bar_Stool:Bar_Stool|Bar_Stool:pCube7|Bar_Stool:pCubeShape7" "instObjGroups.objectGroups[0].objectGrpCompList" 
 		" -type \"componentList\" 1 \"f[0:1731]\""
@@ -1901,7 +1902,7 @@ createNode reference -n "Bar_StoolRN1";
 		
 		2 "|Bar_Stool1:Bar_Stool" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		
-		2 "|Bar_Stool1:Bar_Stool|Bar_Stool1:pCube7" "translate" " -type \"double3\" 0 0 -0.080728674839765147"
+		2 "|Bar_Stool1:Bar_Stool|Bar_Stool1:pCube7" "translate" " -type \"double3\" 0.045330013007622495 0 -0.080728674839765369"
 		
 		2 "|Bar_Stool1:Bar_Stool|Bar_Stool1:pCube7|Bar_Stool1:pCubeShape7" "uvPivot" 
 		" -type \"double2\" 0.86959460377693176 0.82571175694465637"
@@ -3389,8 +3390,8 @@ createNode reference -n "Bar_TabelRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Bar_TabelRN"
 		"Bar_TabelRN" 0
-		"Bar_TabelRN" 30
-		2 "|Bar_Tabel:group2" "translate" " -type \"double3\" 0 0.099794422673562533 0"
+		"Bar_TabelRN" 31
+		2 "|Bar_Tabel:group2" "translate" " -type \"double3\" 0.035224507697332319 0.099794422673562533 0"
 		
 		2 "|Bar_Tabel:group2|Bar_Tabel:pCube4|Bar_Tabel:pCubeShape4" "uvPivot" " -type \"double2\" 0.86200723513575295 0.87790927191812096"
 		
@@ -3423,24 +3424,26 @@ createNode reference -n "Bar_TabelRN";
 		" -s 14 -type \"float2\" 0.93532813000000004 0.96706521999999995 0.93523878000000005 0.95773363 0.94625371999999996 0.95762813000000002 0.94634306000000001 0.96695947999999998 0.83598273999999995 0.94594955000000003 0.84531425999999998 0.94602262999999998 0.84522801999999997 0.95703769000000005 0.83589654999999996 0.95696460999999999 0.93532276000000003 0.94671844999999999 0.84523225000000002 0.97738433000000002 0.84531741999999999 0.96636926999999995 0.93524306999999995 0.97808026999999997 0.93501049000000003 0.98740958999999995 0.84499734999999998 0.98671352999999995"
 		
 		2 "|Bar_Tabel:group2|Bar_Tabel:pCube2" "visibility" " 1"
+		2 "|Bar_Tabel:group2|Bar_Tabel:pCube2" "translate" " -type \"double3\" 0 0 0"
+		
 		2 "|Bar_Tabel:group2|Bar_Tabel:pCube2|Bar_Tabel:pCubeShape2" "uvPivot" " -type \"double2\" 0.15763843059539795 0.87708866596221924"
 		
 		2 "|Bar_Tabel:group2|Bar_Tabel:pCube2|Bar_Tabel:pCubeShape2" "uvst[0].uvsp[0:13]" 
 		" -s 14 -type \"float2\" 0.19365268999999999 0.97662431000000005 0.19365268999999999 0.77755368000000002 0.20675576000000001 0.77755337999999996 0.20675576000000001 0.97662389000000005 0.15763848999999999 0.77755320000000006 0.15763848999999999 0.97662371000000003 0.14453536 0.97662406999999996 0.14453536 0.77755337999999996 0.10852116000000001 0.97662406999999996 0.1085211 0.77755350000000001 0.19365233000000001 0.98972749999999998 0.15763819000000001 0.98972654000000004 0.15763885 0.76444983 0.19365304999999999 0.76445079000000005"
 		
-		3 "|Bar_Tabel:group2|Bar_Tabel:pCube3|Bar_Tabel:pCubeShape3.instObjGroups" 
+		3 "|Bar_Tabel:group2|Bar_Tabel:pCube5|Bar_Tabel:pCubeShape5.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bar_Tabel:group2|Bar_Tabel:pCube2|Bar_Tabel:pCubeShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bar_Tabel:group2|Bar_Tabel:pCube7|Bar_Tabel:pCubeShape7.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bar_Tabel:group2|Bar_Tabel:pCube5|Bar_Tabel:pCubeShape5.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bar_Tabel:group2|Bar_Tabel:pCube8|Bar_Tabel:pCubeShape8.instObjGroups" 
+		3 "|Bar_Tabel:group2|Bar_Tabel:pCube4|Bar_Tabel:pCubeShape4.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Bar_Tabel:group2|Bar_Tabel:pCube6|Bar_Tabel:pCubeShape6.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Bar_Tabel:group2|Bar_Tabel:pCube4|Bar_Tabel:pCubeShape4.instObjGroups" 
+		3 "|Bar_Tabel:group2|Bar_Tabel:pCube8|Bar_Tabel:pCubeShape8.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bar_Tabel:group2|Bar_Tabel:pCube3|Bar_Tabel:pCubeShape3.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Bar_Tabel:group2|Bar_Tabel:pCube7|Bar_Tabel:pCubeShape7.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 3 "Bar_TabelRN" "|Bar_Tabel:group2|Bar_Tabel:pCube4|Bar_Tabel:pCubeShape4.instObjGroups" 
 		"Bar_TabelRN.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -3559,6 +3562,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "Bar_StoolRN.phl[1]" "blinn1SG.dsm" -na;
 connectAttr "groupId1.id" "Bar_StoolRN.phl[2]";
 connectAttr "blinn1SG.mwc" "Bar_StoolRN.phl[3]";

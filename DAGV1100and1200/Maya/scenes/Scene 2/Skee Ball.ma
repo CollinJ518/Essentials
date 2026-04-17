@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Skee Ball.ma
-//Last modified: Thu, Apr 16, 2026 05:23:38 PM
+//Last modified: Thu, Apr 16, 2026 07:55:47 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "51518311-41FD-73F5-CAA8-B092E56B3CAC";
+fileInfo "UUID" "7DE46B81-4046-DE21-2888-C391D5B22A2B";
 createNode transform -s -n "persp";
 	rename -uid "2AD83E16-4B55-8D70-AF49-B9B408C5C81D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.2336023435172416 5.6398098239996806 15.21085692629855 ;
-	setAttr ".r" -type "double3" -7.2000000000002053 -716.39999999999225 -9.9588849641594648e-17 ;
+	setAttr ".t" -type "double3" -6.8893982175385311 5.7993877922454224 13.053753177256674 ;
+	setAttr ".r" -type "double3" -10.800000000000004 8.8000000000002121 2.0115255878453131e-16 ;
 	setAttr ".rpt" -type "double3" 2.5694562914985009e-17 4.5633732569743422e-17 1.2354102165877381e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3E480E7E-423C-AB68-CEC0-CA98DD85878F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 18.91076672806626;
+	setAttr ".coi" 18.9107667280676;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -144,17 +144,21 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.125 ;
+	setAttr ".pv" -type "double2" 0.625 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 6 ".pt";
-	setAttr ".pt[8]" -type "float3" 0 -0.036168754 0.23809357 ;
-	setAttr ".pt[9]" -type "float3" 0 -0.036168754 0.23809357 ;
-	setAttr ".pt[10]" -type "float3" 0 -0.11662699 0.093210399 ;
-	setAttr ".pt[11]" -type "float3" 0 -0.11662699 0.093210399 ;
+	setAttr -s 8 ".pt";
+	setAttr ".pt[0]" -type "float3" -0.033230983 -0.018775919 0.012599094 ;
+	setAttr ".pt[1]" -type "float3" 0.032388128 -0.018775919 0.012599094 ;
+	setAttr ".pt[2]" -type "float3" -0.033230983 0.031005472 0.0011308251 ;
+	setAttr ".pt[3]" -type "float3" 0.032388128 0.031005472 0.0011308251 ;
+	setAttr ".pt[8]" -type "float3" -0.013881764 -0.051762652 0.24278189 ;
+	setAttr ".pt[9]" -type "float3" 0.013881288 -0.051762652 0.24278189 ;
+	setAttr ".pt[10]" -type "float3" 0.013881288 -0.10362761 0.080611169 ;
+	setAttr ".pt[11]" -type "float3" -0.013881764 -0.10362761 0.080611169 ;
 createNode transform -n "pCube2";
 	rename -uid "015E5260-41E0-0112-AA48-9391A717874A";
 	setAttr ".t" -type "double3" -7.8003728643204813 4.3374770628111108 -4.4413248423339935 ;
@@ -164,17 +168,17 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 5 ".pt";
-	setAttr ".pt[0]" -type "float3" 0 0 0.066181906 ;
-	setAttr ".pt[1]" -type "float3" 0 0 0.066181906 ;
-	setAttr ".pt[2]" -type "float3" 0 0 0.066181906 ;
-	setAttr ".pt[3]" -type "float3" 0 0 0.066181906 ;
+	setAttr ".pt[8]" -type "float3" 1.1920929e-07 -1.4901161e-08 -4.7683716e-07 ;
+	setAttr ".pt[11]" -type "float3" 1.1920929e-07 -1.4901161e-08 -4.7683716e-07 ;
+	setAttr ".pt[16]" -type "float3" 1.1920929e-07 -1.4901161e-08 -4.7683716e-07 ;
+	setAttr ".pt[19]" -type "float3" 1.1920929e-07 -1.4901161e-08 -4.7683716e-07 ;
 createNode transform -n "pCube3";
 	rename -uid "B532B1D1-4BFA-3D29-54BE-11838A57AEEA";
 	setAttr ".t" -type "double3" -6.8613044403625203 0.55393188719016906 -1.3893521101691886 ;
@@ -258,8 +262,8 @@ createNode mesh -n "polySurfaceShape1" -p "pCube4";
 createNode transform -n "pCylinder1";
 	rename -uid "4D29A8C8-498A-D3D7-2451-8CAB5BB1DEA2";
 	setAttr ".t" -type "double3" -7.8275211190703082 0.72948309996011007 -3.2197636232610281 ;
-	setAttr ".r" -type "double3" 0 0 89.368692668451601 ;
-	setAttr ".s" -type "double3" 0.3770518770581206 0.3770518770581206 0.3770518770581206 ;
+	setAttr ".r" -type "double3" 0 0 88.876200548714039 ;
+	setAttr ".s" -type "double3" 0.35749780380468227 0.35749780380468227 0.35749780380468227 ;
 createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	rename -uid "D0E869C6-4840-35D0-29EE-19B1D09CCD1C";
 	setAttr -k off ".v";
@@ -1927,20 +1931,20 @@ createNode mesh -n "pCylinderShape10" -p "pCylinder10";
 		0.056765422 0.030136289 -4.9170475 0.31907144 0.01642956 -4.9118752 0.32161409 0.017686713 
 		-5.0235023 0.32125044 0.012726195 -5.0182066 0.31819919 0.010758191;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "48646228-4661-596F-0DC9-19ADDB22250D";
+	rename -uid "B9CAE8D6-4B00-8158-7DCB-D2A9C291C150";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0191797F-4BB8-2691-AAA1-F2AE11CFAF3F";
+	rename -uid "ADB9D865-4C52-C297-6868-ECBFD776913F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E5BD08B8-4A81-6AE4-3A1D-8EAF6607D97D";
+	rename -uid "89F91486-46EC-351A-7903-A49170C7886A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AB1BE11A-4FC2-3769-0897-7397B3C645AF";
+	rename -uid "C8463D7A-4872-67BD-4BC6-739598E70CB3";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3FE1F576-4891-7AE6-8D98-448B80A98FF3";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CDF6F283-4B7E-211C-7239-2D90747E1E1E";
+	rename -uid "09A34619-4AE8-E428-C8D8-8F9ED754A9F4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "69D17416-4535-860B-1378-1E87A59E637E";
 	setAttr ".g" yes;
@@ -2066,7 +2070,7 @@ createNode polyNormal -n "polyNormal1";
 createNode polyTweak -n "polyTweak4";
 	rename -uid "A2D0DC27-402D-41C7-8B03-4484FF65FB84";
 	setAttr ".uopa" yes;
-	setAttr -s 9 ".tk";
+	setAttr -s 8 ".tk";
 	setAttr ".tk[0]" -type "float3" 0 0 -0.10659647 ;
 	setAttr ".tk[1]" -type "float3" 0 0 -0.10659647 ;
 	setAttr ".tk[2]" -type "float3" 0 0 -0.10659647 ;
@@ -2088,11 +2092,9 @@ createNode polyExtrudeFace -n "polyExtrudeFace4";
 createNode polyTweak -n "polyTweak5";
 	rename -uid "C4BCA1EC-4B9E-C8E3-B6E7-0FB00FF6641C";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".tk";
-	setAttr ".tk[8]" -type "float3" 0.16347195 0.25015289 -0.77021575 ;
-	setAttr ".tk[9]" -type "float3" -0.16347195 0.25015289 -0.77021575 ;
-	setAttr ".tk[10]" -type "float3" -0.16347195 -0.27190924 -1.0167594 ;
-	setAttr ".tk[11]" -type "float3" 0.16347195 -0.27190924 -1.0167594 ;
+	setAttr -s 4 ".tk[8:11]" -type "float3"  0.16347195 0.25015289 -0.77021575
+		 -0.16347195 0.25015289 -0.77021575 -0.16347195 -0.27190924 -1.016759396 0.16347195
+		 -0.27190924 -1.016759396;
 createNode polyNormal -n "polyNormal2";
 	rename -uid "C23D9E28-4F97-95C9-9B24-3F8A5B03D4E3";
 	setAttr ".ics" -type "componentList" 2 "f[10]" "f[16:19]";
@@ -2100,19 +2102,12 @@ createNode polyNormal -n "polyNormal2";
 createNode polyTweak -n "polyTweak6";
 	rename -uid "EE8EB515-4328-73A4-A09B-A68E9D5010C5";
 	setAttr ".uopa" yes;
-	setAttr -s 15 ".tk";
-	setAttr ".tk[12]" -type "float3" -0.034422804 -0.037336707 0.0068701808 ;
-	setAttr ".tk[13]" -type "float3" 0.034422819 -0.037336707 0.0068701808 ;
-	setAttr ".tk[14]" -type "float3" 0.034422819 0.036534626 -0.030658571 ;
-	setAttr ".tk[15]" -type "float3" -0.034422804 0.036534626 -0.030658571 ;
-	setAttr ".tk[16]" -type "float3" -0.040449452 0.046558961 0.0068257758 ;
-	setAttr ".tk[17]" -type "float3" 0.040449452 0.046558961 0.0068257758 ;
-	setAttr ".tk[18]" -type "float3" 0.040449452 0.046558961 -0.035265338 ;
-	setAttr ".tk[19]" -type "float3" -0.040449452 0.046558961 -0.035265338 ;
-	setAttr ".tk[20]" -type "float3" 0.040449452 -0.046558961 -0.035265338 ;
-	setAttr ".tk[21]" -type "float3" -0.040449452 -0.046558961 -0.035265338 ;
-	setAttr ".tk[22]" -type "float3" 0.040449452 -0.046558961 0.035265338 ;
-	setAttr ".tk[23]" -type "float3" -0.040449452 -0.046558961 0.035265338 ;
+	setAttr -s 12 ".tk[12:23]" -type "float3"  -0.034422804 -0.037336707
+		 0.0068701808 0.034422819 -0.037336707 0.0068701808 0.034422819 0.036534626 -0.030658571
+		 -0.034422804 0.036534626 -0.030658571 -0.040449452 0.046558961 0.0068257758 0.040449452
+		 0.046558961 0.0068257758 0.040449452 0.046558961 -0.035265338 -0.040449452 0.046558961
+		 -0.035265338 0.040449452 -0.046558961 -0.035265338 -0.040449452 -0.046558961 -0.035265338
+		 0.040449452 -0.046558961 0.035265338 -0.040449452 -0.046558961 0.035265338;
 createNode polyExtrudeFace -n "polyExtrudeFace5";
 	rename -uid "475FBB98-40CC-C500-43CF-25945F2FACA8";
 	setAttr ".ics" -type "componentList" 1 "f[5]";
@@ -2176,7 +2171,7 @@ createNode polyBevel3 -n "polyBevel1";
 createNode polyTweak -n "polyTweak8";
 	rename -uid "FB9AE738-4687-3813-DDBB-349E9851E880";
 	setAttr ".uopa" yes;
-	setAttr -s 49 ".tk";
+	setAttr -s 43 ".tk";
 	setAttr ".tk[24]" -type "float3" 7.4505806e-09 0 5.9604645e-08 ;
 	setAttr ".tk[25]" -type "float3" -7.4505806e-09 0 -4.4703484e-08 ;
 	setAttr ".tk[41]" -type "float3" 0.17547947 -0.18450986 -0.057016756 ;
@@ -2364,29 +2359,17 @@ createNode polyExtrudeFace -n "polyExtrudeFace10";
 createNode polyTweak -n "polyTweak11";
 	rename -uid "E79685C5-42BD-A7AF-C6D0-B6BA34BEC902";
 	setAttr ".uopa" yes;
-	setAttr -s 25 ".tk";
-	setAttr ".tk[22]" -type "float3" -0.098490439 -0.0072046411 -0.00032100687 ;
-	setAttr ".tk[23]" -type "float3" -0.093669973 -0.0072046402 -0.018809995 ;
-	setAttr ".tk[24]" -type "float3" -0.093669973 0.0072046416 -0.018809984 ;
-	setAttr ".tk[25]" -type "float3" -0.098490439 0.0072046416 -0.00032099197 ;
-	setAttr ".tk[26]" -type "float3" -0.07968042 -0.0072046411 0.0086460216 ;
-	setAttr ".tk[27]" -type "float3" -0.07968042 0.0072046416 0.0086460216 ;
-	setAttr ".tk[28]" -type "float3" -0.057891201 -0.0072046416 0.030435227 ;
-	setAttr ".tk[29]" -type "float3" -0.057891201 0.0072046402 0.030435227 ;
-	setAttr ".tk[30]" -type "float3" -0.030435201 -0.0072046411 0.044424757 ;
-	setAttr ".tk[31]" -type "float3" -0.030435201 0.0072046402 0.044424757 ;
-	setAttr ".tk[32]" -type "float3" 8.8057295e-09 -0.0072046411 0.04924522 ;
-	setAttr ".tk[33]" -type "float3" 8.8057295e-09 0.0072046402 0.04924522 ;
-	setAttr ".tk[34]" -type "float3" 0.030435225 -0.0072046411 0.044424754 ;
-	setAttr ".tk[35]" -type "float3" 0.030435225 0.0072046402 0.044424754 ;
-	setAttr ".tk[36]" -type "float3" 0.057891212 -0.0072046416 0.030435225 ;
-	setAttr ".tk[37]" -type "float3" 0.057891212 0.0072046402 0.030435225 ;
-	setAttr ".tk[38]" -type "float3" 0.079680428 -0.0072046411 0.0086460169 ;
-	setAttr ".tk[39]" -type "float3" 0.079680428 0.0072046416 0.0086460169 ;
-	setAttr ".tk[40]" -type "float3" 0.093669973 -0.0072046402 -0.018809995 ;
-	setAttr ".tk[41]" -type "float3" 0.093669973 0.0072046416 -0.018809995 ;
-	setAttr ".tk[42]" -type "float3" 0.098490447 -0.0072046411 0.0031174188 ;
-	setAttr ".tk[43]" -type "float3" 0.098490447 0.0072046416 0.0031174337 ;
+	setAttr -s 22 ".tk[22:43]" -type "float3"  -0.098490439 -0.0072046411
+		 -0.00032100687 -0.093669973 -0.0072046402 -0.018809995 -0.093669973 0.0072046416
+		 -0.018809984 -0.098490439 0.0072046416 -0.00032099197 -0.07968042 -0.0072046411 0.0086460216
+		 -0.07968042 0.0072046416 0.0086460216 -0.057891201 -0.0072046416 0.030435227 -0.057891201
+		 0.0072046402 0.030435227 -0.030435201 -0.0072046411 0.044424757 -0.030435201 0.0072046402
+		 0.044424757 8.8057295e-09 -0.0072046411 0.04924522 8.8057295e-09 0.0072046402 0.04924522
+		 0.030435225 -0.0072046411 0.044424754 0.030435225 0.0072046402 0.044424754 0.057891212
+		 -0.0072046416 0.030435225 0.057891212 0.0072046402 0.030435225 0.079680428 -0.0072046411
+		 0.0086460169 0.079680428 0.0072046416 0.0086460169 0.093669973 -0.0072046402 -0.018809995
+		 0.093669973 0.0072046416 -0.018809995 0.098490447 -0.0072046411 0.0031174188 0.098490447
+		 0.0072046416 0.0031174337;
 createNode polyExtrudeFace -n "polyExtrudeFace11";
 	rename -uid "8FEE3644-4BB9-EB23-236F-50B4EEE8939D";
 	setAttr ".ics" -type "componentList" 2 "f[22]" "f[40]";
@@ -2489,6 +2472,14 @@ createNode polyTweak -n "polyTweak13";
 		 -0.22776246 0.01441154 0.0046621095 -0.22353098 -4.8428774e-08 4.6798959e-08 -0.22353098
 		 -1.4901161e-08 1.1204975e-07 0.23292676 -1.4901161e-08 7.3749106e-08 0.22869517 0.014411521
 		 0.0046621282 0.23292665 -1.1175871e-07 2.5669578e-08 0.23292699 -1.0803342e-07 1.5483238e-08;
+createNode polyTweak -n "polyTweak14";
+	rename -uid "276AD601-42DB-72DF-AC3A-89BB0FD9C66C";
+	setAttr ".uopa" yes;
+	setAttr -s 4 ".tk[0:3]" -type "float3"  0 0 0.066181906 0 0 0.066181906
+		 0 0 0.066181906 0 0 0.066181906;
+createNode deleteComponent -n "deleteComponent9";
+	rename -uid "C30BBAFE-4F36-9A75-504C-16A19AB03B27";
+	setAttr ".dc" -type "componentList" 1 "f[6]";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2536,21 +2527,19 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "polyNormal2.out" "pCubeShape1.i";
-connectAttr "polyNormal1.out" "pCubeShape2.i";
+connectAttr "deleteComponent9.og" "pCubeShape2.i";
 connectAttr "polyExtrudeFace6.out" "pCubeShape3.i";
 connectAttr "polyExtrudeFace5.out" "pCubeShape4.i";
 connectAttr "polyCylinder1.out" "pCylinderShape1.i";
 connectAttr "polyBevel1.out" "pCylinderShape2.i";
+connectAttr "pCylinder8_translateX.o" "pCylinder8.tx";
+connectAttr "pCylinder8_translateY.o" "pCylinder8.ty";
+connectAttr "pCylinder8_translateZ.o" "pCylinder8.tz";
 connectAttr "pCylinder8_scaleX.o" "pCylinder8.sx";
 connectAttr "pCylinder8_scaleY.o" "pCylinder8.sy";
 connectAttr "pCylinder8_scaleZ.o" "pCylinder8.sz";
 connectAttr "pCylinder8_visibility.o" "pCylinder8.v";
-connectAttr "pCylinder8_translateX.o" "pCylinder8.tx";
-connectAttr "pCylinder8_translateY.o" "pCylinder8.ty";
-connectAttr "pCylinder8_translateZ.o" "pCylinder8.tz";
 connectAttr "pCylinder8_rotateX.o" "pCylinder8.rx";
 connectAttr "pCylinder8_rotateY.o" "pCylinder8.ry";
 connectAttr "pCylinder8_rotateZ.o" "pCylinder8.rz";
@@ -2612,6 +2601,8 @@ connectAttr "polyExtrudeFace10.out" "polyTweak12.ip";
 connectAttr "polyTweak13.out" "polyExtrudeFace12.ip";
 connectAttr "pCylinderShape10.wm" "polyExtrudeFace12.mp";
 connectAttr "polyExtrudeFace11.out" "polyTweak13.ip";
+connectAttr "polyNormal1.out" "polyTweak14.ip";
+connectAttr "polyTweak14.out" "deleteComponent9.ig";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "Skee_ball:pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;

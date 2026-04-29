@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Main Arcade Scene.ma
-//Last modified: Tue, Apr 28, 2026 05:50:53 PM
+//Last modified: Tue, Apr 28, 2026 05:56:45 PM
 //Codeset: 1252
 file -rdi 1 -ns "Bar_Stool" -rfn "Bar_StoolRN" -op "v=0;" -typ "mayaAscii" "C:/Users/colli/GitHub/Essentials/DAGV1100and1200/Maya/Essentials/DAGV1100and1200/Maya//assets/Bar Stool.ma";
 file -rdi 1 -ns "Bar_Stool1" -rfn "Bar_StoolRN1" -op "v=0;" -typ "mayaAscii"
@@ -62,17 +62,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "58A5F5FE-45EB-6DEC-28D8-4887F91E3C0D";
+fileInfo "UUID" "9C2E0E93-47C2-1A12-0B79-1EAF9E334B18";
 createNode transform -s -n "persp";
 	rename -uid "9500C114-4B01-0266-A6E7-BEB9E859385F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.7523375697531272 11.279557863627421 28.593066216111623 ;
-	setAttr ".r" -type "double3" -16.53835274817618 710.59999999995341 4.0298049210654379e-16 ;
+	setAttr ".t" -type "double3" 17.864885459555378 17.106021915237676 43.329724274130555 ;
+	setAttr ".r" -type "double3" -17.138352748180306 740.99999999992383 -4.2585440300459059e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "98DBEB5A-4C79-00CA-C196-1983C242C279";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 34.564978542509238;
+	setAttr ".coi" 53.161490005718235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
